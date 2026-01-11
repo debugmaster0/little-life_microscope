@@ -1,0 +1,19 @@
+little-life/                 ← project root (git repo)
+├── src/
+│   └── littlelife/          ← Python package (importable)
+│       ├── __init__.py
+│       ├── app.py           ← NEW main Qt app (refactored main.py)
+│       ├── identify_image.py
+│       ├── secrets_store.py
+│       └── config.py        ← (optional later; env/runtime helpers)
+│
+├── scripts/
+│   ├── run_app.py           ← tiny dev launcher
+│   ├── camera_probe.py     ← optional (unchanged)
+│   └── camera_preview.py   ← optional (unchanged)
+│
+├── .env                     ← local secrets (NOT committed)
+├── requirements.txt
+├── pyproject.toml           ← tooling config (black/ruff/etc.)
+├── README.md
+└── .gitignore
